@@ -7,23 +7,24 @@ nav {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: end;
     gap: 5px;
+    background: linear-gradient(180deg, $first-color 0%, $second-color 100%);
    .active{
         color: $third-color;
         text-decoration: none;
         cursor: pointer;
-        font-size: 37px;
+        font-size: 45px;
         border: $third-color 2px solid;
         border-bottom: none;
-        padding-top: 10%;
+        height: 100%;
     }
     a:hover {
         color: $third-color;
         text-decoration: none;
         cursor: pointer;
-        font-size: 37px;
+        font-size: 45px;
         border: $third-color 2px solid;
         border-bottom: none;
-        padding-top: 10%;
+        height: 100%;
     }
     a {  
         color: $fifth-color;

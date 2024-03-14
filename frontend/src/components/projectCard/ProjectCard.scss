@@ -1,0 +1,30 @@
+.card{
+    position: relative;
+    width: 100%;
+    border: solid 1px white;
+    overflow: hidden;
+    border-radius: 25px;
+    img{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 99%;
+        height: 99%;
+        border: solid 1px white;
+    }
+    p{
+        position: absolute;
+        width: 88%;
+        left: 6%;
+        font-weight: 700;
+        font-size: 18px;
+        color: white;
+        margin: 0;
+        bottom: 2.5%;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+}

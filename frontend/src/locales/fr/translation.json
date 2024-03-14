@@ -3,5 +3,10 @@
     "about":"A propos",
     "contact":"Contact",
     "skills":"Competences",
-    "projects":"Projets"
+    "projects":"Projets",
+    "firstAbout":"Salut ! Je m'appelle ",
+    "secondAbout":"Je suis un developpeur web base en France",
+    "thirdAbout":"J'etait auparavant un ingenieur mecanique",
+    "fourthAbout":"Je suis passionne par le code et toute les sortes de nouvelles technologies",
+    "fifthAbout":"N'hesitez pas a me contacter !"
 }

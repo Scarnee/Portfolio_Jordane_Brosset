@@ -1,3 +1,29 @@
+@import '../../utils/names_variables.scss';
+
 .mainAbout{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
     height: 75%;
+    align-items: center;
+    
+    gap: 10%;
+    img{
+        width: 45%;
+        aspect-ratio: 1/1;
+        border: solid 1px white;
+    }
+    .textAbout{
+        .aboutName{
+            color: $third-color;
+            font-size: 40px;
+        }
+        h1{
+            white-space: nowrap;
+        }
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        
+    }
 }
