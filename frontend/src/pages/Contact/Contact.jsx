@@ -7,7 +7,8 @@ import { motion } from "framer-motion";
 export default function Contact() {
     return (
         <motion.div className="mainContact" style={pageStyle} initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition}>
-            <img alt="imageContact"></img>
+            <img src="src\assets\contact.jpg" alt="imageContact"></img>
+
             <div className="contactRight">
                 <h1>Contact me</h1>
                 <form className="contactForm" id="contactForm">

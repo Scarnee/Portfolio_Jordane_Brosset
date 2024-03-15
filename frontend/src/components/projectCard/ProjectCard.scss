@@ -1,18 +1,32 @@
-.card{
+@import '../../utils/names_variables.scss';
+
+.card {
     position: relative;
     width: 100%;
-    border: solid 1px white;
+    border: solid 1px $fifth-color;
     overflow: hidden;
     border-radius: 25px;
-    img{
+    z-index: 1000;
+    :hover {
+        background: rgb(0, 0, 0, 0.9);
+        opacity: 0.2;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+    }
+    :hover~ul{
+        display: flex;
+    }
+    img {
         position: absolute;
         top: 0%;
         left: 0%;
-        width: 99%;
-        height: 99%;
+        width: 100%;
+        height: 100%;
         border: solid 1px white;
+        object-fit: cover;
     }
-    p{
+
+    p {
         position: absolute;
         width: 88%;
         left: 6%;
@@ -20,11 +34,35 @@
         font-size: 18px;
         color: white;
         margin: 0;
+        text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
         bottom: 2.5%;
     }
-    ul{
+    ul {
         margin: 0;
         padding: 0;
+        padding-top: 25px;
+        width: 100%;
         display: none;
+        position: absolute;
+        list-style-type: none;
+        color: $fifth-color;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+         li{
+            padding: 2px 5px 2px 5px;
+            border: solid 1px $fifth-color;
+            border-radius: 5px;
+         }
     }
 }
+/*.card:after {
+    position:absolute;
+    width:100%; height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}*/

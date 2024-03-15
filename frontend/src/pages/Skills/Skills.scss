@@ -1,38 +1,44 @@
-@import '../../utils/names_variables.scss';
-
-.mainSkills{
+@import "../../utils/names_variables.scss";
+.mainSkills {
+    display: flex;
+    flex-direction: column;
     height: 75%;
     width: 80%;
-    display: flex;
-    flex-direction: row;
-    
-    align-items: center;
-    h1{
-        color: $third-color;
-    }
-    .codingSkills{
-        width: 50%;
-        border-right: solid 2px $fifth-color;
-        .iconList{
-            display: grid;
-            width: 100%;
-            grid-template-columns: 1fr 1fr 1fr;
-            justify-content: center;
-            row-gap: 25px;
-        }  
-        i{
-            color: $fifth-color;  
-            font-size: 50px; 
-        }
-        p{
-            color: $fifth-color;
-        }
-       
-    }
-    .softSkills{
-        width: 50%;
-        
+    justify-content: space-evenly;
+    .topSkills {
+        display: flex;
+        flex-direction: row;
 
+        align-items: center;
+        h1 {
+            color: $third-color;
+        }
+        .codingSkills {
+            width: 50%;
+            border-right: solid 2px $fifth-color;
+            .iconList {
+                display: grid;
+                width: 100%;
+                grid-template-columns: 1fr 1fr 1fr;
+                justify-content: center;
+                row-gap: 25px;
+            }
+            i {
+                color: $fifth-color;
+                font-size: 50px;
+            }
+            p {
+                color: $fifth-color;
+            }
+        }
+        .softSkills {
+            width: 50%;
+        }
     }
-   
+    .bottomSkills{
+        i{
+            color: $fifth-color;
+            font-size: 35px;
+        }
+    }
 }

@@ -12,7 +12,9 @@
         font-family: "Orbitron", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
-        color: $fifth-color;
+        color: $third-color;
+        background-color: transparent;
+        -webkit-appearance: none
     }
     option:hover{
         color: $third-color;

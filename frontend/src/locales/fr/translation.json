@@ -8,5 +8,10 @@
     "secondAbout":"Je suis un developpeur web base en France",
     "thirdAbout":"J'etait auparavant un ingenieur mecanique",
     "fourthAbout":"Je suis passionne par le code et toute les sortes de nouvelles technologies",
-    "fifthAbout":"N'hesitez pas a me contacter !"
+    "fifthAbout":"N'hesitez pas a me contacter !",
+    "codingSkills":"Competences en Codage",
+    "softSkills":"Compétences Générales",
+    "problemSolving":"Résolution de problème",
+    "trilingual":"Trilingue : Francais, Anglais, Espagnol",
+    "adaptability":"Adaptabilite"
 }

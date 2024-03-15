@@ -3,11 +3,15 @@ import { Link } from 'react-router-dom'
 
 export default function ProjectCard({id, title, URL, tags, imageURL}) {
   return (
+
+
     <Link to={URL} id={id} className='card'>
         <img src={imageURL} alt={title}></img>
         <p>{title}</p>
         <ul>
-            <li>{tags}</li>
+            {tags.map((tag) => (
+                <li key={tag}>{tag}</li>
+            ))}
         </ul>
     </Link>
   )

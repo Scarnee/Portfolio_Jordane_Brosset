@@ -8,5 +8,10 @@
     "secondAbout":"I'm a web developer based in France",
     "thirdAbout":"I used to work as a mechanical engineer",
     "fourthAbout":"I'm passionate about coding and all sorts of new technologies",
-    "fifthAbout":"Feel free to reach out to me !"
+    "fifthAbout":"Feel free to reach out to me !",
+    "codingSkills":"Coding Skills",
+    "softSkills":"Soft Skills",
+    "problemSolving":"Problem Solving",
+    "trilingual":"Trilingual : English, French, Spanish",
+    "adaptability":"Adaptability"
 }
