@@ -5,7 +5,7 @@ export default function ProjectCard({id, title, URL, tags, imageURL}) {
   return (
 
 
-    <Link to={URL} id={id} className='card'>
+    <Link to={URL} id={id} target='_blank' className='card'>
         <img src={imageURL} alt={title}></img>
         <p>{title}</p>
         <ul>

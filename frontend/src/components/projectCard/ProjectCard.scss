@@ -8,6 +8,7 @@
     border-radius: 25px;
     z-index: 1000;
     :hover {
+        z-index: 500;
         background: rgb(0, 0, 0, 0.9);
         opacity: 0.2;
         transition: all 0.5s;
@@ -38,6 +39,7 @@
         bottom: 2.5%;
     }
     ul {
+        z-index: 1;
         margin: 0;
         padding: 0;
         padding-top: 25px;

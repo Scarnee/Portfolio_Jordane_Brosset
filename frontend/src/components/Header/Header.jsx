@@ -1,7 +1,7 @@
 import "./Header.scss";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import { Link } from "react-router-dom";
-import BlackLogo from '../../assets/blackLogo-no-background.png'
+//import BlackLogo from '../../assets/blackLogo-no-background.png'
 import WhiteLogo from '../../assets/whiteLogo-no-background.png'
 
 
@@ -15,7 +15,6 @@ export default function Header() {
                 </Link>
             </div>
             <div className="headerRight">
-                <img alt="contrastSelector"></img>
                 <LanguageSelector />
             </div>
         </header>

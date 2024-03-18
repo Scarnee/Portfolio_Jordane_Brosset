@@ -14,14 +14,12 @@
         font-style: normal;
         color: $third-color;
         background-color: transparent;
-        -webkit-appearance: none
     }
-    option:hover{
+    option:hover {
         color: $third-color;
         background-color: red;
-
     }
 }
-#dropdown:hover{
+#dropdown:hover {
     color: $third-color;
 }
