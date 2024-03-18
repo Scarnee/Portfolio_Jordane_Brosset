@@ -21,13 +21,10 @@ export default function LanguageSelector() {
     }*/
 
     return (
-        <label for="dropdown">
-            <select id="dropdown" defaultValue={selectedLanguage} onChange={chooseLanguage} /*onMouseEnter={openMenu}*/>
+        <select id="dropdown" defaultValue={selectedLanguage} onChange={chooseLanguage} /*onMouseEnter={openMenu}*/>
             <option value="en">English</option>
             <option value="fr">Francais</option>
             <option value="es">Espanol</option>
         </select>
-        </label>
-        
     );
 }
