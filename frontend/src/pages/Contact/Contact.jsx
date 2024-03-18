@@ -36,10 +36,10 @@ export default function Contact() {
                     </button>
                 </form>
                 <div className="socials">
-                    <a href="https://github.com/Scarnee">
+                    <a target="_blank" href="https://github.com/Scarnee">
                         <i className="fa-brands fa-github"></i>
                     </a>
-                    <a href="linkedin.com/in/jordanebrosset">
+                    <a target="_blank" href="linkedin.com/in/jordanebrosset">
                         <i className="fa-brands fa-linkedin"></i>
                     </a>
                 </div>
