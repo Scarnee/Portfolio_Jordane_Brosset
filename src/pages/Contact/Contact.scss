@@ -7,12 +7,12 @@
     align-items: center;
     gap: 10%;
     img {
-        width: 45%;
-        
+        width: 45%; 
         object-fit: cover;
         border-radius: 25px;
         object-position:  100%;
         background: rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 15px 5px $second-color;
     };
     input, textarea{
         font-family: "Orbitron", sans-serif;
@@ -90,6 +90,31 @@
             button:hover{
                 background-color: $third-color;
             }
+        }
+    }
+}
+@include phone{
+    .mainContact{
+        flex-direction: column-reverse;
+        .contactRight{
+            width: 100%;
+        }
+        img{
+            display: none;
+        }
+        h1, button {
+            font-size: 20px !important;
+        }
+        h2, form {
+            font-size: 14px;
+        }
+    }
+}
+@include tablet{
+    .mainContact{
+        flex-direction: column-reverse;
+        .contactRight{
+            width: 100%;
         }
     }
 }

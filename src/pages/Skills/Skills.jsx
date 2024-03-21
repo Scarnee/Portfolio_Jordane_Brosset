@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 export default function Skills() {
-    const {t} = useTranslation()
+    const { t } = useTranslation();
     return (
         <motion.div className="mainSkills" style={pageStyle} initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition}>
             <div className="topSkills">
@@ -46,14 +46,18 @@ export default function Skills() {
                             <i className="fa-solid fa-database"></i>
                             <p>MongoDB</p>
                         </div>
+                        <div className="skill">
+                            <i className="fa-solid fa-down-left-and-up-right-to-center"></i>
+                            <p>Responsive design</p>
+                        </div>
                     </div>
                 </div>
 
                 <div className="softSkills">
-                    <h1>{t('softSkills')}</h1>
-                    <h2>{t('problemSolving')}</h2>
-                    <h2>{t('trilingual')}</h2>
-                    <h2>{t('adaptability')}</h2>
+                    <h1>{t("softSkills")}</h1>
+                    <h2>{t("problemSolving")}</h2>
+                    <h2>{t("trilingual")}</h2>
+                    <h2>{t("adaptability")}</h2>
                 </div>
             </div>
             <div className="bottomSkills">

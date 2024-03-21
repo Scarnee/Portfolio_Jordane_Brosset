@@ -5,7 +5,8 @@
     "tags":[
         "SEO"
     ],
-    "imageURL":"src/assets/projectImages/NINACARDUCCI.png"
+    "imageURL":"src/assets/projectImages/NINACARDUCCI.png",
+    "description":"Project focusing on optimization : SEO, Accessiblity, Performance"
 },
 {
     "id":"b9123946",
@@ -15,7 +16,8 @@
         "Front-End",
         "Javascript"
     ],
-    "imageURL":"src/assets/projectImages/SOPHIEBLUEL.png"
+    "imageURL":"src/assets/projectImages/SOPHIEBLUEL.png",
+    "description":"Project focusing on Javascript and requests to APIs"
 },
 {
     "id":"cf514862",
@@ -25,18 +27,8 @@
         "Front-End",
         "React"
     ],
-    "imageURL":"src/assets/projectImages/KASA.png"
-},
-{
-    "id":"b9584246",
-    "title":"Booki",
-    "URL":"https://github.com/Scarnee/projetBookiOC",
-    "tags":[
-        "HTML",
-        "CSS",
-        "Front-End"
-    ],
-    "imageURL":"src/assets/projectImages/BOOKI.png"
+    "imageURL":"src/assets/projectImages/KASA.png",
+    "description":"Project focusing on React framework"
 },
 {
     "id":"dr584246",
@@ -47,6 +39,7 @@
         "Express",
         "MongoDB"
     ],
-    "imageURL":"src/assets/projectImages/MONVIEUXGRIMOIRE.png"
+    "imageURL":"src/assets/projectImages/MONVIEUXGRIMOIRE.png",
+    "description":"Project focusing on back-end coding, database access"
 }
 ]

@@ -1,4 +1,4 @@
-@import '../../utils/names_variables.scss';
+@import "../../utils/names_variables.scss";
 nav {
     z-index: 1000;
     width: 90%;
@@ -8,7 +8,7 @@ nav {
     align-items: end;
     gap: 5px;
     background: linear-gradient(180deg, $first-color 0%, $second-color 100%);
-   .active{
+    .active {
         color: $third-color;
         text-decoration: none;
         cursor: pointer;
@@ -26,7 +26,7 @@ nav {
         border-bottom: none;
         height: 100%;
     }
-    a {  
+    a {
         color: $fifth-color;
         font-size: 35px;
         border: solid 2px $fifth-color;
@@ -38,5 +38,33 @@ nav {
         align-items: center;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+    }
+}
+@include phone {
+    nav {
+        grid-template-columns: 1fr 1fr;
+        a {
+            border: solid 2px $fifth-color;
+            border-radius: 10px;
+            font-size: 18px;
+            height: 90%;
+        }
+        .active {
+            font-size: 18px;
+            border: $third-color 2px solid;
+            height: 90%;
+        }
+    }
+}
+@include tablet{
+    nav{
+        a {
+            font-size: 28px;
+            height: 90%;
+        }
+        .active {
+            font-size: 28px;
+            height: 100%;
+        }
     }
 }

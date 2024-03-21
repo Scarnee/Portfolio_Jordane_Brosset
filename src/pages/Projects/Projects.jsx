@@ -11,7 +11,7 @@ export default function Projects() {
     return (
         <motion.div className="mainProjects" style={pageStyle} initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition}>
             {data.map((project) => (
-                <ProjectCard id={project.id} title={project.title} imageURL={project.imageURL} URL={project.URL} key={project.id} tags={project.tags} />
+                <ProjectCard id={project.id} title={project.title} imageURL={project.imageURL} URL={project.URL} key={project.id} tags={project.tags} description={project.description}/>
             ))}
         </motion.div>
     );

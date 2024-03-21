@@ -33,12 +33,55 @@
         }
         .softSkills {
             width: 50%;
+            box-sizing: border-box;
+            padding-left: 20px;
+            padding-right: 20px;
         }
     }
-    .bottomSkills{
-        i{
+    .bottomSkills {
+        i {
             color: $fifth-color;
             font-size: 25px;
+        }
+    }
+}
+@include phone {
+    .mainSkills {
+        h1{
+            font-size: 20px;
+        }
+        h2{
+            font-size: 14px;
+        }
+        .topSkills {
+            flex-direction: column !important;
+        }
+        .codingSkills {
+            width: 100% !important;
+            border-right: none !important;
+        }
+        .softSkills {
+            width: 100% !important;
+        }
+    }
+}
+@include tablet{
+    .mainSkills {
+        h1{
+            font-size: 20px;
+        }
+        h2{
+            font-size: 18px;
+        }
+        .topSkills {
+            flex-direction: column !important;
+        }
+        .codingSkills {
+            width: 100% !important;
+            border-right: none !important;
+        }
+        .softSkills {
+            width: 100% !important;
         }
     }
 }

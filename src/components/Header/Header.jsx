@@ -2,7 +2,7 @@ import "./Header.scss";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import { Link } from "react-router-dom";
 //import BlackLogo from '../../assets/blackLogo-no-background.png'
-import WhiteLogo from '../../assets/whiteLogo-no-background.png'
+import WhiteLogo from '../../assets/logo.svg'
 
 
 

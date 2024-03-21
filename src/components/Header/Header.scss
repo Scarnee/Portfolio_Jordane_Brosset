@@ -7,7 +7,7 @@ header {
     padding-bottom: 10px;
     padding-top: 10px;
     justify-content: space-between;
-   
+
     background: linear-gradient(360deg, $first-color 0%, $second-color 100%);
     .headerRight {
         display: flex;
@@ -19,7 +19,10 @@ header {
         height: 100%;
         img {
             height: 100%;
-            color: white;
+            filter: brightness(0) invert(1);
+        }
+        img:hover {
+            filter: invert(49%) sepia(70%) saturate(1080%) hue-rotate(121deg) brightness(95%) contrast(99%);
         }
     }
 }
