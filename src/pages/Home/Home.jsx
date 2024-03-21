@@ -13,7 +13,7 @@ export default function Home() {
                     <h1>Jordane Brosset</h1>
                     <h2>{t("title")}</h2>
                 </div>
-                <img src="src\assets\profilePicture.webp" alt="Profile Picture" className="profilePicture"></img>
+                <img src="public\images\profilePicture.webp" alt="Profile Picture" className="profilePicture"></img>
             </div>
         </motion.div>
     );

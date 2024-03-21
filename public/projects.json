@@ -5,7 +5,7 @@
     "tags":[
         "SEO"
     ],
-    "imageURL":"src/assets/projectImages/NINACARDUCCI.png",
+    "imageURL":"public/images/projectImages/NINACARDUCCI.png",
     "description":"Project focusing on optimization : SEO, Accessiblity, Performance"
 },
 {
@@ -16,7 +16,7 @@
         "Front-End",
         "Javascript"
     ],
-    "imageURL":"src/assets/projectImages/SOPHIEBLUEL.png",
+    "imageURL":"public/images/projectImages/SOPHIEBLUEL.png",
     "description":"Project focusing on Javascript and requests to APIs"
 },
 {
@@ -27,7 +27,7 @@
         "Front-End",
         "React"
     ],
-    "imageURL":"src/assets/projectImages/KASA.png",
+    "imageURL":"public/images/projectImages/KASA.png",
     "description":"Project focusing on React framework"
 },
 {
@@ -39,7 +39,7 @@
         "Express",
         "MongoDB"
     ],
-    "imageURL":"src/assets/projectImages/MONVIEUXGRIMOIRE.png",
+    "imageURL":"public/images/projectImages/MONVIEUXGRIMOIRE.png",
     "description":"Project focusing on back-end coding, database access"
 }
 ]

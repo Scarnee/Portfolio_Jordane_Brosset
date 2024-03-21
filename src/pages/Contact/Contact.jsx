@@ -13,6 +13,7 @@ export default function Contact() {
         e.preventDefault()
         emailjs.sendForm('service_bnsb7yj' ,'template_md14ud8', e.target, 'PxrPg-OEI5V4KHmfE')
         .then ((res) => {
+            alert('Message Sent !')
             console.log(res.text)
         }),(error) => {
             console.log(error.text)
@@ -20,7 +21,7 @@ export default function Contact() {
     }
     return (
         <motion.div className="mainContact" style={pageStyle} initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition}>
-            <img src="src\assets\contact.jpg" alt="imageContact"></img>
+            <img src="public\images\contact.jpg" alt="imageContact"></img>
 
             <div className="contactRight">
                 <h1>{t("contactMe")}</h1>

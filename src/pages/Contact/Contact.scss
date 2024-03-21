@@ -108,6 +108,10 @@
         h2, form {
             font-size: 14px;
         }
+        button:hover{
+            background-color: transparent;
+            color: $fifth-color;
+        }
     }
 }
 @include tablet{

@@ -49,6 +49,11 @@ nav {
             font-size: 18px;
             height: 90%;
         }
+        a:hover{
+            font-size: 18px;
+            border: $third-color 2px solid;
+            height: 90%;
+        }
         .active {
             font-size: 18px;
             border: $third-color 2px solid;
