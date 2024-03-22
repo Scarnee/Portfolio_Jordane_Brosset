@@ -8,9 +8,13 @@
     align-items: center;
     gap: 10%;
     img {
-        width: 45%;
-        border: solid 1px white;
-    }
+        width: 45%; 
+        object-fit: cover;
+        border-radius: 25px;
+        object-position:  100%;
+        background: rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 15px 5px $second-color;
+    };
     .textAbout {
         .aboutName {
             color: $third-color;
@@ -28,6 +32,7 @@
     .mainAbout {
         flex-direction: column-reverse !important;
         gap: 5%;
+        justify-content: space-evenly;
         h1,
         .aboutName {
             font-size: 20px !important;

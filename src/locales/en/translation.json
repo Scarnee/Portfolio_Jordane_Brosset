@@ -1,4 +1,5 @@
 {
+    "selectedLanguage":"English",
     "title": "Web Developer",
     "about":"About",
     "contact":"Contact",
@@ -17,5 +18,6 @@
     "yourname":"Your name",
     "youremail":"Your email",
     "yourmessage":"Your message",
-    "contactMe":"Contact me"
+    "contactMe":"Contact me",
+    "downloadCV":"Download CV"
 }

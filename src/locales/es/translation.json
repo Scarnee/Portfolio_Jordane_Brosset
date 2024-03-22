@@ -1,22 +1,24 @@
 {
+    "selectedLanguage":"Español",
     "title": "Desarrollador Web",
     "about":"Sobre mi",
     "contact":"Contacto",
     "skills":"Habilidades",
     "projects":"Proyectos",
     "firstAbout":"Hola ! Me llamo ",
-    "secondAbout":"Soy un desarrollador web frances",
-    "thirdAbout":"Era un ingeniero mecanico",
+    "secondAbout":"Soy un desarrollador web francès",
+    "thirdAbout":"Era un ingeniero mecánico",
     "fourthAbout":"Me apasiona la codificación y todo tipo de nuevas tecnologías.",
     "fifthAbout":"No duden en comunicarse conmigo !",
     "codingSkills":"Coding Skills",
     "softSkills":"Soft Skills",
     "problemSolving":"Resolución de problemas",
-    "trilingual":"Trilingüe : Espanol, Ingles, Frances",
+    "trilingual":"Trilingüe : Español, Inglès, Francès",
     "adaptability":"Adaptabilidad",
     "yourname":"Su nombre",
     "youremail":"Su email",
     "yourmessage":"Su mensaje",
-    "contactMe":"Contactarme"
+    "contactMe":"Contactarme",
+    "downloadCV":"Descargar CV"
 
 }
