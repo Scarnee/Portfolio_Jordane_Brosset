@@ -6,14 +6,13 @@ import { useTranslation } from "react-i18next";
 
 export default function LanguageSelector() {
     const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
-    const {t} = useTranslation()
+    const { t } = useTranslation();
     const chooseLanguage = (e) => {
         let dropdownTop = document.querySelector(`#dropdown .dropdownTop`);
         e.preventDefault();
         i18n.changeLanguage(e.target.value); //i18n.changeLanguage used to change language
         setSelectedLanguage(e.target.value);
-        dropdownTop.click()
-
+        dropdownTop.click();
     };
     const [open, setOpen] = React.useState(false);
 
@@ -41,21 +40,27 @@ export default function LanguageSelector() {
         <div id="dropdown" className="dropdown">
             <div className="dropdownTop" onClick={handleOpen}>
                 <p className="dropdownTitle">{t("selectedLanguage")}</p>
-                <button className={"btnValeurs" + (open ? " btnOpen" : "")}>
+                <button className={"btnValeurs" + (open ? " btnOpen" : "")} aria-label="dropdownButton">
                     <i className="fa-solid fa-chevron-down"></i>
                 </button>
             </div>
             <div className="dropdownText">
                 <ul defaultValue={selectedLanguage} onChange={chooseLanguage}>
-                    <option value="en" onClick={chooseLanguage} className={ selectedLanguage =='en' ? "hidden" : ""}>
-                        English
-                    </option>
-                    <option value="fr" onClick={chooseLanguage} className={ selectedLanguage =='fr' ? "hidden" : ""}>
-                        Français
-                    </option>
-                    <option value="es" onClick={chooseLanguage} className={ selectedLanguage =='es' ? "hidden" : ""}>
-                        Español
-                    </option>
+                    <li className={selectedLanguage == "en" ? "hidden" : ""}>
+                        <option value="en" onClick={chooseLanguage}>
+                            English
+                        </option>
+                    </li>
+                    <li className={selectedLanguage == "fr" ? "hidden" : ""}>
+                        <option value="fr" onClick={chooseLanguage}>
+                            Français
+                        </option>
+                    </li>
+                    <li className={selectedLanguage == "es" ? "hidden" : ""}>
+                        <option value="es" onClick={chooseLanguage}>
+                            Español
+                        </option>
+                    </li>
                 </ul>
             </div>
         </div>
