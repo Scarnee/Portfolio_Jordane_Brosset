@@ -39,7 +39,7 @@
         "Express",
         "MongoDB"
     ],
-    "imageURL":"static/img/projectImages/KASA.png",
+    "imageURL":"static/img/projectImages/MONVIEUXGRIMOIRE.png",
     "description":"Project focusing on back-end coding, database access"
 }
 ]
