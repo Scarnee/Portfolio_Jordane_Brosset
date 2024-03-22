@@ -1,4 +1,5 @@
-sitemap: https://portfolio-jordane-brosset.vercel.app/
+User-agent: *
+Allow: /
 
-user-agent: *
-disallow:
+
+Sitemap: https://portfolio-jordane-brosset.vercel.app/
