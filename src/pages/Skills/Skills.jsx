@@ -62,7 +62,7 @@ export default function Skills() {
             </div>
             <div className="bottomSkills">
                 <p>{t("downloadCV")}</p>
-                <a target="_blank" href="src\assets\CV.pdf">
+                <a target="_blank" href={'public/CV.pdf'}>
                     <i className="fa-solid fa-download"></i>
                 </a>
             </div>
