@@ -11,13 +11,14 @@
     "fourthAbout":"I'm passionate about coding and all sorts of new technologies",
     "fifthAbout":"Feel free to reach out to me !",
     "codingSkills":"Coding Skills",
-    "softSkills":"Soft Skills",
-    "problemSolving":"Problem Solving",
+    "softSkills":"Soft Skills",    
+    "problemSolving":"Autonomous",
+    "adaptability":"Perserverante",
+    "productivity":"Productive",
     "trilingual":"Trilingual : English, French, Spanish",
-    "adaptability":"Adaptability",
     "yourname":"Your name",
     "youremail":"Your email",
     "yourmessage":"Your message",
     "contactMe":"Contact me",
-    "downloadCV":"Download CV"
+    "downloadCV":"Download CV (French)"
 }

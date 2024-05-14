@@ -1,4 +1,4 @@
-import {  Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.scss";
 import Home from "./pages/Home/Home.jsx";
 import About from "./pages/About/About.jsx";
@@ -8,6 +8,8 @@ import Contact from "./pages/Contact/Contact.jsx";
 import NavBar from "./components/NavBar/NavBar.jsx";
 import Header from "./components/Header/Header.jsx";
 import { AnimatePresence } from "framer-motion";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 /*function LocationProvider({element}) {
     return <AnimatePresence mode="wait">{element}</AnimatePresence>;
@@ -25,6 +27,8 @@ function App() {
     const location = useLocation();
     return (
         <div className="main">
+            <Analytics />
+            <SpeedInsights />
             <Header />
             <AnimatePresence mode="wait">
                 <Routes location={location} key={location.pathname}>

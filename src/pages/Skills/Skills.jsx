@@ -56,13 +56,14 @@ export default function Skills() {
                 <div className="softSkills">
                     <h1>{t("softSkills")}</h1>
                     <h2>{t("problemSolving")}</h2>
-                    <h2>{t("trilingual")}</h2>
+                    <h2>{t("productivity")}</h2>
                     <h2>{t("adaptability")}</h2>
+                    <h2>{t("trilingual")}</h2>
                 </div>
             </div>
             <div className="bottomSkills">
                 <p>{t("downloadCV")}</p>
-                <a target="_blank" href={"static/CV.pdf"}>
+                <a target="_blank" href={"static/CV_Jordane_BROSSET.pdf"}>
                     <i className="fa-solid fa-download"></i>
                 </a>
             </div>

@@ -8,6 +8,7 @@
     border-radius: 25px;
     z-index: 1000;
     box-shadow: 0px 0px 15px 5px $second-color;
+
     :hover {
         z-index: 500;
         background: rgb(0, 0, 0, 0.9);
@@ -137,3 +138,4 @@
         }
     }
 }
+
