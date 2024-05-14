@@ -8,13 +8,14 @@
     border-radius: 25px;
     z-index: 1000;
     box-shadow: 0px 0px 15px 5px $second-color;
-
+    -webkit-transition : all 0.5s ease;
+    transition: all 0.5s ease;
     :hover {
         z-index: 500;
         background: rgb(0, 0, 0, 0.9);
         opacity: 0.2;
-        transition: all 0.5s;
-        -webkit-transition: all 0.5s;
+        scale: 1.1;
+        transition: 0.5s;
     }
     :hover~ul{
         display: flex;
