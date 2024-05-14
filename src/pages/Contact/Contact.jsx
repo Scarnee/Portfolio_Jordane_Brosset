@@ -21,7 +21,7 @@ export default function Contact() {
     }
     return (
         <motion.div className="mainContact" style={pageStyle} initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition}>
-            <img src={"/static/img/contact.jpg"} alt="imageContact"></img>
+            <img src={"/static/img/contact.webp"} alt="imageContact"></img>
 
             <div className="contactRight">
                 <h1>{t("contactMe")}</h1>
@@ -40,7 +40,7 @@ export default function Contact() {
                     <a target="_blank" href="https://github.com/Scarnee">
                         <i className="fa-brands fa-github"></i>
                     </a>
-                    <a target="_blank" href="linkedin.com/in/jordanebrosset">
+                    <a target="_blank" href="https://linkedin.com/in/jordanebrosset">
                         <i className="fa-brands fa-linkedin"></i>
                     </a>
                 </div>

@@ -9,7 +9,7 @@ export default function About() {
     const { t } = useTranslation();
     return (
         <motion.div className="mainAbout" style={pageStyle} initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition}>
-            <img src={"/static/img/coding_character.jpg"} alt="otherPic"></img>
+            <img src={"/static/img/coding_character.webp"} alt="otherPic"></img>
             <div className="textAbout">
                 <h1>{t("firstAbout")}</h1>
                 <h1 className="aboutName">Jordane Brosset</h1>
