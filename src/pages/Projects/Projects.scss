@@ -5,9 +5,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr ;
     gap: 5%;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-    box-sizing: border-box;  
+   padding: 2.5%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    overflow: hidden;
 }
 @include phone{
     .mainProjects{

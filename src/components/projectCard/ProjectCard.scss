@@ -1,142 +1,153 @@
-@import '../../utils/names_variables.scss';
+@import "../../utils/names_variables.scss";
 
 .card {
     position: relative;
     width: 100%;
-    border: solid 1px $fifth-color;
+    height: 95%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    border-radius: 25px;
-    z-index: 1000;
-    box-shadow: 0px 0px 15px 5px $second-color;
-    -webkit-transition : all 0.5s ease;
-    transition: all 0.5s ease;
-    :hover {
-        z-index: 500;
-        background: rgb(0, 0, 0, 0.9);
-        opacity: 0.2;
-        scale: 1.1;
-        transition: 0.5s;
-    }
-    :hover~ul{
-        display: flex;
-    }
-    img {
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        width: 100%;
-        height: 100%;
-        border: solid 1px white;
-        object-fit: cover;
-    }
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px $first-color;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 4px $third-color;
+}
 
-   h2{
-        position: absolute;
-        width: 88%;
-        left: 6%;
-        font-weight: 700;
-        font-size: 18px;
-        color: white;
-        margin: 0;
-        text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-        bottom: 2.5%;
-    }
-    ul {
-        z-index: 1;
-        margin: 0;
-        padding: 0;
-        padding-top: 25px;
-        width: 100%;
-        display: none;
-        position: absolute;
-        list-style-type: none;
-        color: $fifth-color;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-         li{
-            padding: 2px 5px 2px 5px;
-            border: solid 1px $fifth-color;
-            border-radius: 5px;
-         }
-    }
-    h3 {
-        z-index: 1;
-        margin: 0;
-        align-self: center;
-        left: 5%;
-        width: 90%;
-        display: none;
-        position: absolute;
-        color: $fifth-color;
-        top: 50%;
-        text-align: center;
-    }
-    :hover~h3{
-        display: block;
-        text-align: center;
+.cardContent {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: $second-color;
+    align-items: center;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card:hover .cardContent {
+    transform: rotateX(0deg);
+}
+.cardContent ul {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    li{
+
     }
 }
-@include phone{
-    .card{
-       
-        h1{
-            font-size: 20px;
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card:hover ~ img {
+    scale: 0;
+}
+.cardTitle {
+    margin: 0;
+    font-size: 24px;
+    color: $third-color;
+    font-weight: 700;
+}
+
+.cardDescription {
+    margin: 10px 0 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.gitLink{
+        width: 50%;
+
+}
+.btnGit{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    background: $third-color;
+    border: none;
+    color: $fifth-color;
+    cursor: pointer;
+}
+@include phone {
+    .card {
+        .cardContent{
+            display: flex;
+            background-color: #f2f2f2;
+            opacity: 0.9;
+            transform: rotateX(0deg);
+        }
+        .cardTitle {
+            font-size: 10px;
             z-index: 1000;
         }
-        img{
-            z-index: 0;
-            background: rgb(0, 0, 0, 0.9);
-            opacity: 0.2;
+
+        ul {
+            font-size: 10px;
+            z-index: 1000;
         }
-        h2{
+        .cardDescription {
+            display: block;
+            font-size: 10px;
+            z-index: 1000;
+            text-shadow: 0.2px 0 0 #000, 0 -0.2px 0 #000, 0 0.2px 0 #000, -0.2px 0 0 #000;
+        }
+        .btnGit{
+            font-size: 8px;
+            padding: 6px;
+        }
+    }
+}
+@include tablet {
+    .card {
+        .cardContent{
+            display: flex;
+            background-color: #f2f2f2;
+            opacity: 0.9;
+            transform: rotateX(0deg);
+        }
+        .cardTitle {
+            font-size: 22px;
+            z-index: 1000;
+        }
+
+        ul {
             font-size: 14px;
             z-index: 1000;
         }
-        ul{
-            display: flex;
-            font-size: 10px;
-            flex-direction: row;
-            justify-content: space-evenly;
-            z-index: 1000;
-        }
-        h3{
+        .cardDescription {
             display: block;
-            font-size: 10px;
+            font-size: 14px;
             z-index: 1000;
             text-shadow: 0.2px 0 0 #000, 0 -0.2px 0 #000, 0 0.2px 0 #000, -0.2px 0 0 #000;
         }
+        .btnGit{
+            font-size: 12px;
+            padding: 10px;
+        }
+       
     }
 }
-@include tablet{
-    .card{
-        h1{
-            font-size: 30px;
-            z-index: 1000;
-        }
-        img{
-            z-index: 0;
-            background: rgb(0, 0, 0, 0.9);
-            opacity: 0.2;
-        }
-        h2{
-            font-size: 25px;
-            z-index: 1000;
-        }
-        ul{
-            flex-wrap: wrap;
-            display: flex;
-            font-size: 18px;
-            flex-direction: row;
-            justify-content: space-evenly;
-            z-index: 1000;
-        }
-        h3{
-            display: block;
-            font-size: 18px;
-            z-index: 1000;
-            text-shadow: 0.2px 0 0 #000, 0 -0.2px 0 #000, 0 0.2px 0 #000, -0.2px 0 0 #000;
-        }
-    }
-}
-
